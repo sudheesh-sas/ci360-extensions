@@ -3,8 +3,8 @@
  */
 var IsExtension = false;
 
-var DIAG_VERSION = "diag10(2304)";
-var SDK_VERSION = "sdk11(2304)";
+var DIAG_VERSION = "diag13(2304)";
+var SDK_VERSION = "sdk14(2304)";
 
 var LookupSDK_version_from_server = true;
 var token = null;
@@ -68,12 +68,12 @@ var IsTagAdded = false;
 function checkLatestVersion() {
   var settings = {
     url:
-      "https://www.cidemo.sas.com/tools/snowy/version-remote.json?dt=" +
+      "https://static.cidemo.sas.com/snowy/version-remote.json?dt=" +
       Date.now(),
     method: "GET",
     timeout: 0,
     headers: {
-      "Access-Control-Allow-Origin": "www.cidemo.sas.com",
+      "Access-Control-Allow-Origin": "static.cidemo.sas.com",
     },
   };
 
